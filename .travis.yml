@@ -4,7 +4,6 @@ sudo: required
 before_install:
   - curl -fsSkL https://gist.github.com/rejeep/ebcd57c3af83b049833b/raw > x.sh && source ./x.sh
   - evm install $EVM_EMACS --use --skip
-  - sudo apt-get install --quiet --assume-yes curl git make python ruby gnutls-bin
   - emacs --version
 env:
   - EVM_EMACS=emacs-24.3-travis
